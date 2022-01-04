@@ -5,7 +5,7 @@ h2 {
 
 header {
    height: 100px;
-   object-fit: fill;
+   
    width:100%;
    background-color: rgb(62, 247, 235); 
 }
@@ -36,5 +36,4 @@ header {
     font-weight: 
     font-size: 55 px;
     /* font-family: ; */
-
 }
