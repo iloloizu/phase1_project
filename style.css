@@ -1,3 +1,40 @@
-title {
-    font-size: 80px;
+h2 {
+    text-align: center;
+    font-size: 70px;
+}
+
+header {
+   height: 100px;
+   object-fit: fill;
+   width:100%;
+   background-color: rgb(62, 247, 235); 
+}
+
+#mainGift {
+    position:relative ;
+    width: 500px;
+    height:500px;
+    object-fit: fill;
+    left: 500px;
+}
+
+#giftsFor{
+    position: relative;
+    bottom: 400px;
+    font-size: 30px;
+    
+}
+
+#giftDisplay {
+    position: relative;
+    left:1000px;
+    bottom: 700px;
+    font-size: 40px;
+}
+
+#nameGift {
+    font-weight: 
+    font-size: 55 px;
+    /* font-family: ; */
+
 }
