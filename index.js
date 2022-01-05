@@ -35,8 +35,43 @@ function nameList(giftArray) {
             pictureGift.src = giftObject.picture
             linkGift.href = giftObject.link
             commentGift.textContent = giftObject.comment
-
         })
     })
 }
 
+function submitData() {
+    document.querySelector('#submitForm').addEventListener('submit', (event) => {
+        event.preventDefault();
+        event.target.reset();
+
+        const idkTest = document.querySelector("#comment").event.target.value;
+
+        let output = document.querySelector("newGiftAdd")
+
+        idkTest.textContent = output
+
+        console.log(event)
+    })
+}
+
+submitData();
+
+function testagain() {
+
+    const helpME = document.querySelector('#submitForm').addEventListener('submit', (event) => {
+        event.preventDefault();
+        const giftData = {
+            name: event.target.nameInput.value,
+            item: event.target.artistInput.value,
+            price: event.target.durationInput.value,
+            picture: event.target.youtubeLinkInput.value,
+            link: event.target.nameInput.value,
+            comment: event.target.nameInput.value,
+        }
+        nameList(giftData)
+            .then((savedSong) => {
+                renderSong(savedSong);
+                event.target.reset();
+            })
+    })
+}
