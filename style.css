@@ -1,42 +1,76 @@
+body {
+    background: #ebecf1;
+    color: #b3b9b9;
+    max-width: 100%;
+}
+
+
+
 h2 {
+    font-family:"Montserrat";
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    font-size: 70px;
 }
 
 header {
-   height: 100px;
-   width:100%;
-   background-color: rgb(62, 247, 235); 
+    position: relative;
+    width: 1000px;
+    margin-bottom: 25px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 3px;
+    color: rgb(42, 213, 119); 
+    left: 450px;
 }
 
 #mainGift {
     position:relative ;
     width: 500px;
-    height:500px;
+    height:400px;
     object-fit: fill;
-    left: 500px;
+    left: 450px;
+    border-style: solid solid;
+    border-width:10px;
+    border-color: #ffffff;
+    border-radius: 3px;
 }
 
 #giftsFor{
+    font-family: "Montserrat";
     position: relative;
     bottom: 400px;
-    font-size: 30px;
-    
+    font-size: 20px;
+    left: 250px;
+    color: rgb(42, 213, 119);
 }
 
 #giftDisplay {
     position: relative;
-    left:1000px;
-    bottom: 700px;
+    left:975px;
+    bottom: 650px;
     font-size: 40px;
+    width: 500px;
+    font-family: Montserrat;
 }
 
 #nameGift {
-    font-weight: 
-    font-size: 55 px;
-    /* font-family: ; */
+    font-weight: 500;
+    font-size: 50px;
+    font-family: Montserrat; 
 }
 
-#checkbox {
-    font: size 50px;
+#middleBox {
+    position: absolute;
+    width: 1010px;
+    padding: 10px;
+    border: 5px solid, white solid;
+    margin: 0;
+    background-color: #fff;
+    height: 100%;
+    left: 458px;
+    top:70px;
+    border-radius: 3px;
 }
