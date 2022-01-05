@@ -56,22 +56,22 @@ function submitData() {
 
 submitData();
 
-function testagain() {
+// function testagain() {
 
-    const helpME = document.querySelector('#submitForm').addEventListener('submit', (event) => {
-        event.preventDefault();
-        const giftData = {
-            name: event.target.nameInput.value,
-            item: event.target.artistInput.value,
-            price: event.target.durationInput.value,
-            picture: event.target.youtubeLinkInput.value,
-            link: event.target.nameInput.value,
-            comment: event.target.nameInput.value,
-        }
-        nameList(giftData)
-            .then((savedSong) => {
-                renderSong(savedSong);
-                event.target.reset();
-            })
-    })
-}
+//     const helpME = document.querySelector('#submitForm').addEventListener('submit', (event) => {
+//         event.preventDefault();
+//         const giftData = {
+//             name: event.target.nameInput.value,
+//             item: event.target.artistInput.value,
+//             price: event.target.durationInput.value,
+//             picture: event.target.youtubeLinkInput.value,
+//             link: event.target.nameInput.value,
+//             comment: event.target.nameInput.value,
+//         }
+//         nameList(giftData)
+//             .then((savedSong) => {
+//                 renderSong(savedSong);
+//                 event.target.reset();
+//             })
+//     })
+// }
