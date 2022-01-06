@@ -18,6 +18,15 @@ function nameList(giftArray) {
         nameItem.textContent = giftObject.name
         orderedNames.append(nameItem)
 
+        //tried to get deleted Button for each person & their gift
+
+        // const deleteButton = document.createElement('button').addEventListener("click", (event) => {
+        //     const gone = event.target
+        //     gone.innerHTML = ''
+        // })
+        // deleteButton.innerText = 'Delete'
+        // orderedNames.append(deleteButton)
+
         nameItem.addEventListener('click', (e) => {
             const { item, name, price, picture, link, comment } = giftObject
 
@@ -34,6 +43,8 @@ function nameList(giftArray) {
             pictureGift.src = giftObject.picture
             linkGift.href = giftObject.link
             commentGift.textContent = giftObject.comment
+
+
         })
     })
 }
@@ -53,8 +64,8 @@ function submitData() {
         const newComment = event.target["commentInput"].value
 
         const newGift = {
-            name: newName,
             item: newItem,
+            name: newName,
             price: newPrice,
             picture: newPicture,
             link: newLink,
@@ -63,15 +74,18 @@ function submitData() {
 
         renderGift(newGift);
 
-        fetch(baseURL, {
-            headers: { "Content-Type": "application/json" },
-            method: 'POST',
-            body: JSON.stringify(newGift)
+        fetch("http://localhost:3000/gifts", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newGift),
         })
-            .then(resp => resp.json())
-            .then(data => console.log('success', data))
-            .catch(error => console.error(error))
+            .then((r) => r.json())
+            .then((giftObj) => console.log(giftObj));
 
+
+        // .catch(error => console.error(error))
         event.target.reset()
     })
 }
@@ -105,9 +119,9 @@ function renderGift(giftObject) {
 // const wishlist = document.getElementById('#whosName')
 // wishlist.innerHTML = ""
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-}
+// function getRandomInt(max) {
+//     return Math.floor(Math.random() * max);
+// }
 //testing
 
 // fetch(baseURL, {
@@ -131,4 +145,4 @@ function getRandomInt(max) {
 //         })
 // })
 
-document.querySelector('#finalsubmit').addEventListener('click', (e) => console.log('hello'))
+// document.querySelector('#finalsubmit').addEventListener('click', (e) => console.log('hello'))
