@@ -135,3 +135,21 @@ h3 {
     width: 25px;
     background-color: rgb(255, 255, 255);
 }
+
+#finalSubmit{
+    color: rgb(0, 0, 0);
+    padding: 9px 25px;
+    background-color: rgb(186, 255, 254);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    /* transition: all 0.3s ease 0s;    */
+}
+
+#finalSubmit:hover {
+    background: rgb(255, 177, 31);
+    color: white;
+    transform: translate(2px, 1px);
+    box-shadow: 3px 5px 5px grey;
+    transition: 0.2s
+}

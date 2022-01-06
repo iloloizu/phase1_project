@@ -105,7 +105,9 @@ function renderGift(giftObject) {
 // const wishlist = document.getElementById('#whosName')
 // wishlist.innerHTML = ""
 
-
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 //testing
 
 // fetch(baseURL, {
@@ -117,5 +119,16 @@ function renderGift(giftObject) {
 //     .then(newEntity => console.log(newEntity))
 // // .catch(error => console.error(error))
 
-document.querySelector('button').addEventListener('click', (e) =>
-    console.log('hello'))
+//Attempted randomizer to randomize the gift that was being displayed
+// const randomizer = document.querySelector('button').addEventListener('click', (e) => {
+//     console.log('hello')
+//     fetch(baseURL)
+//         .then(resp => resp.json())
+//         .then(data => {
+//             const randomInt = getRandomInt(9);
+//             const character = data[randomInt];
+//             displayCharacter(character);
+//         })
+// })
+
+document.querySelector('#finalsubmit').addEventListener('click', (e) => console.log('hello'))
