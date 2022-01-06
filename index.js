@@ -117,4 +117,5 @@ function renderGift(giftObject) {
 //     .then(newEntity => console.log(newEntity))
 // // .catch(error => console.error(error))
 
-document.querySelector('button').addEventListener('click', (e) => console.log('hello'))
+document.querySelector('button').addEventListener('click', (e) =>
+    console.log('hello'))

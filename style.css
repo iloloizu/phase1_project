@@ -50,7 +50,17 @@ header {
     color:rgb(40, 228, 225);
     list-style-type: none;
     width:150px;
-    cursor: pointer;
+    cursor: pointer; 
+}
+
+#giftsFor li{
+    padding: 15px;
+}
+
+#giftsFor li:hover{
+    background-color:rgb(255, 177, 31);
+    color: white;
+    width: 100px;
 }
 
 h3 {
@@ -63,7 +73,7 @@ h3 {
 #giftDisplay {
     position: relative;
     left:975px;
-    bottom: 1000px;
+    bottom: 1200px;
     font-size: 20px;
     font-family: "Montserrat";
     width: 500px;
@@ -112,7 +122,7 @@ h3 {
     text-align: center;
     border-radius: 5px;
     background: white;
-    top: 600px;
+    top: 650px;
     width: 600px;
     left: 680px;
     font-family: "Montserrat", sans-serif;
