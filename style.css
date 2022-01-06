@@ -4,12 +4,14 @@ body {
 }
 
 h2 {
-    font-family:"Montserrat", sans-serif;
-    font-size: 20px;
+    font-family:"Montserrat";
+    font-size: 22px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-align: center;
+    text-decoration: underline;
+
 }
 
 header {
@@ -21,7 +23,7 @@ header {
     border-radius: 3px;
     color: rgb(40, 228, 225); 
     left: 450px;
-    box-shadow: 0px 0px 20px rgb(89, 89, 89);
+    box-shadow: 0px 0px 20px rgb(148, 148, 148);
 }
 
 #mainGift {
@@ -34,7 +36,7 @@ header {
     border-width:10px;
     border-radius: 3px;
     border: solid white;
-    box-shadow: 0px 0 5px rgba(125, 125, 125);
+    box-shadow: 0px 0 5px rgb(148, 148, 148);
 }
 
 #giftsFor{
@@ -48,6 +50,14 @@ header {
     color:rgb(40, 228, 225);
     list-style-type: none;
     width:150px;
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: black
 }
 
 #giftDisplay {
@@ -62,9 +72,10 @@ header {
 #nameGift {
     font-weight: 500;
     font-size: 55px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat-black";
     text-transform: uppercase;
     color: rgb(0, 0, 0);
+    text-decoration: underline;
 }
 
 #middleBox {
@@ -95,14 +106,13 @@ header {
     box-shadow: 0px 0px 15px rgb(160, 160, 160);
 }
 
-
 #iWantMoreGifts {
     position: relative;
     box-shadow: 0px 0px 5px rgb(182, 182, 182);
     text-align: center;
     border-radius: 5px;
     background: white;
-    top: 850px;
+    top: 600px;
     width: 600px;
     left: 680px;
     font-family: "Montserrat", sans-serif;

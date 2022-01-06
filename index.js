@@ -1,7 +1,8 @@
 submitData();
+const baseURL = "http://localhost:3000/gifts"
 
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("http://localhost:3000/gifts")
+    fetch(baseURL)
         .then(resp => resp.json())
         .then(data => {
             const giftList = data
@@ -62,22 +63,13 @@ function submitData() {
 
         renderGift(newGift);
 
-        handleNewData();
-
-        function handleNewData(submitData) {
-
-            //grab the place to put the new data
-            let additionalNames = document.getElementById("newGiftAdd")
-            additionalNames.innerHTML = "" //empty the from to put it
-
-        }
-        fetch("http://localhost:3000/gifts", {
+        fetch(baseURL, {
             headers: { "Content-Type": "application/json" },
-            method: "POST",
+            method: 'POST',
             body: JSON.stringify(newGift)
         })
             .then(resp => resp.json())
-            .then(newEntity => nameList(newEntity))
+            .then(data => console.log('success', data))
             .catch(error => console.error(error))
 
         event.target.reset()
@@ -107,4 +99,22 @@ function renderGift(giftObject) {
         linkGift.href = giftObject.link
         commentGift.textContent = giftObject.comment
     })
+
 }
+
+// const wishlist = document.getElementById('#whosName')
+// wishlist.innerHTML = ""
+
+
+//testing
+
+// fetch(baseURL, {
+//     ddheaders: { "Content-Type": "application/json" },
+//     method: "POST",
+//     body: JSON.stringify(newGift)
+// })
+//     .then(resp => resp.json())
+//     .then(newEntity => console.log(newEntity))
+// // .catch(error => console.error(error))
+
+document.querySelector('button').addEventListener('click', (e) => console.log('hello'))
