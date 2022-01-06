@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
         })
 })
 
+// let purchaseGift = document.createElement('button')
+// purchaseGift.innerText = 'Purchase'
+// let realButton = document.getElementById('linkGift')
+// realButton.append(purchaseGift)
+
 function nameList(giftArray) {
 
     giftArray.forEach(giftObject => {
@@ -19,13 +24,14 @@ function nameList(giftArray) {
         orderedNames.append(nameItem)
 
         //tried to get deleted Button for each person & their gift
-
         // const deleteButton = document.createElement('button').addEventListener("click", (event) => {
         //     const gone = event.target
         //     gone.innerHTML = ''
         // })
         // deleteButton.innerText = 'Delete'
         // orderedNames.append(deleteButton)
+
+        //trying to create a purchase button for each item
 
         nameItem.addEventListener('click', (e) => {
             const { item, name, price, picture, link, comment } = giftObject
@@ -44,8 +50,8 @@ function nameList(giftArray) {
             linkGift.href = giftObject.link
             commentGift.textContent = giftObject.comment
 
-
         })
+
     })
 }
 
@@ -113,25 +119,12 @@ function renderGift(giftObject) {
         linkGift.href = giftObject.link
         commentGift.textContent = giftObject.comment
     })
-
 }
-
-// const wishlist = document.getElementById('#whosName')
-// wishlist.innerHTML = ""
 
 // function getRandomInt(max) {
 //     return Math.floor(Math.random() * max);
 // }
 //testing
-
-// fetch(baseURL, {
-//     ddheaders: { "Content-Type": "application/json" },
-//     method: "POST",
-//     body: JSON.stringify(newGift)
-// })
-//     .then(resp => resp.json())
-//     .then(newEntity => console.log(newEntity))
-// // .catch(error => console.error(error))
 
 //Attempted randomizer to randomize the gift that was being displayed
 // const randomizer = document.querySelector('button').addEventListener('click', (e) => {
