@@ -5,15 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donations & Gifts</title>
+    <title>Take a Hint</title>
     <script defer src="index.js"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <div id="leftBox"></div>
+    <div id="giftsFor">
+        <h3>Gift's For:</h3>
+        <p id="giftGetters"></p>
+        <!-- <h6 id="test123"></h6> -->
+    </div>
     <div id="rightBox"></div>
-    <div id="middleBox"></div>
+    <div id="middleBox">
+        <div id="gift-image">
+            <img id="mainGift"
+                src="https://media.istockphoto.com/vectors/isometric-gift-flat-icon-pixel-perfect-for-mobile-and-web-vector-id1152848595?k=20&m=1152848595&s=612x612&w=0&h=T9QQc2EYpvnB_sBzvcNrraL77VE9aXQlA86xum364uU="
+                alt="No Image">
+        </div>
+        <div id="giftDisplay">
+            <p id="nameGift">Welcome!</p>
+            <p id="itemGift">Here you can display gifts that are on your list, making it easier for your friend to
+                <i>take a
+                    hint.</i> <br> Below is where you will be able to click and purchase the item that is inserted into
+                the
+                form, as well as mark it as purchased or not. <br> You can also add items, in the form listed at the
+                bottom
+                of the page.
+            </p>
+            <p id="newGiftAdd"></p>
+            <p id="priceGift"></p>
+            <a href="" id="linkGift">Click to Buy</a>
+            <p id="commentGift"></p>
+            <p id="purchaseGift"></p>
+            <form>
+                <label for="ordered">Purchased</label>
+                <input type="checkbox" id="checkOrder" value="ordered">
+            </form>
+        </div>
+    </div>
     <div id="donation-bar">
         <header>
             <h2 id="whosList">Take a Hint®</h2>
@@ -43,39 +74,6 @@
                 <br><input id="finalSubmit" class="finalSubmit" type="submit" value="Submit">
             </form>
     </div>
-    <div id="gift-image">
-        <img id="mainGift"
-            src="https://media.istockphoto.com/vectors/isometric-gift-flat-icon-pixel-perfect-for-mobile-and-web-vector-id1152848595?k=20&m=1152848595&s=612x612&w=0&h=T9QQc2EYpvnB_sBzvcNrraL77VE9aXQlA86xum364uU="
-            alt="No Image">
-    </div>
-    <div id="giftsFor">
-        <h3>Gift's For:</h3>
-        <p id="giftGetters"></p>
-        <!-- <h6 id="test123"></h6> -->
-        <p id="newGiftAdd"></p>
-    </div>
-    <div id="giftDisplay">
-        <p id="nameGift">Welcome!</p>
-        <p id="itemGift">Here you can display gifts that are on your list, making it easier for your friend to <i>take a
-                hint.</i> <br> Below is where you will be able to click and purchase the item that is inserted into the
-            form, as well as mark it as purchased or not. <br> You can also add items, in the form listed at the bottom
-            of the page.
-        </p>
-        <p id="priceGift"></p>
-        <a href="" id="linkGift">Click to Buy</a>
-        <p id="commentGift"></p>
-        <p id="purchaseGift"></p>
-        <form id="checkmate">
-            <label for="ordered">Purchased</label>
-            <input type="checkbox" id="checkOrder" class="checkOrder" value="ordered">
-        </form>
-    </div>
-
-    <!-- <div id="weDidntGetThisButtonToWork"> 
-        <button>
-            Feeling Generous?
-        </button>
-    </div> -->
 </body>
 
 </html>
